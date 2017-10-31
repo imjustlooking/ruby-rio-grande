@@ -1,14 +1,14 @@
-#Rio Grande
+# Rio Grande
 Rio Grande is an online retailer founded by Jerome Basile and named after his favorite river. It started out selling books, but now they sells all sorts of things. They need your OOP / TDD skills to help them create classes for all the different types of items in their online store.
 
-##Getting Started
+## Getting Started
 
 * Fork and clone this repository
 * Run `bundle install` to install dependencies
   * Run `rubocop` to lint your code
   * Run `rspec` to run the test suite
 
-##Development Process
+## Development Process
 
 We are creating this using Test Driven Development. As a refresher, here is the basic process:
 
@@ -18,7 +18,7 @@ We are creating this using Test Driven Development. As a refresher, here is the 
 * Run test again (it should pass)
 * Refactor if necessary
 
-##Working in Pairs (recommended)
+## Working in Pairs (recommended)
 
 Due to the TDD-nature of this assignment, it's recommended that you pair up with another person and work on this collaboratively. If you decide to take this route:
 
@@ -26,7 +26,7 @@ Due to the TDD-nature of this assignment, it's recommended that you pair up with
 * Have the other person create the code to pass the tests
 * Each person should submit the same code via pull request
 
-###Tests
+### Tests
 Every class should have tests for all of the following:
 
 * Initializer
@@ -39,7 +39,7 @@ Every class should have tests for all of the following:
 
 To run tests use the `rspec` command
 
-###Interactive Console
+### Interactive Console
 
 You can also test things manually in the console using `irb` or `pry` by using `require` to load a class. To make this easier we've included a file called `bootstrap.rb` which loads all of the models and loads the pry interactive console.
 
@@ -54,13 +54,13 @@ You can also test things manually in the console using `irb` or `pry` by using `
 # => "candy"
 ```
 
-##Requirements
+## Requirements
 
-###Item
+### Item
 
 Item has already been created for you, along with the tests for Item. Take a look at the file and inspect what the class does.
 
-###Music, Movies, and Books
+### Music, Movies, and Books
 
 Next, let's make the following classes that inherit from Item. Each class should have the following instance variables, as well as inherit from Item by calling the `super` method to pass the name and price.
 
@@ -83,7 +83,7 @@ Next, let's make the following classes that inherit from Item. Each class should
 b = Book.new('Book Title', 12.99, 33, 'Author Name')
 ```
 
-###Digital Items
+### Digital Items
 
 Oh no the future is here!! Now we need to support digital items. Digital items are things that are downloaded and therefore they do not have a finite quantity.
 
